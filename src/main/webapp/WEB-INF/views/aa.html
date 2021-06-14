@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Home</title>
+</head>
+<body>
+<form th:action="@{/bb}" th:object="${map}">
+    <input type="text" name="*{1}" />
+    <input type="text" name="*{['user'].name}"/>
+    <input type="text" name="*{['user'].msg}"/>
+
+    <input type="text" name="*{2}" />
+    <input type="text" name="*{['user'].name}"/>
+    <input type="text" name="*{['user'].msg}"/>
+
+    <input type="submit"/>
+</form>
+
+</body>
+</html>
